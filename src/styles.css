@@ -248,3 +248,24 @@ td{padding:9px;border-bottom:1px solid var(--line);vertical-align:middle}
 .staffrow{display:flex;align-items:center;gap:12px;padding:10px;border:1px solid var(--line);border-radius:14px;margin:8px 0;background:rgba(255,255,255,.3)}
 [data-theme="dark"] .staffrow{background:rgba(255,255,255,.04)}
 .avatar{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:22px;color:#fff;font-weight:900;flex:none}
+
+/* ===== Login de cristal a pantalla completa (estilo foto de referencia) ===== */
+.login-screen{position:fixed;inset:0;z-index:200;margin:0;border-radius:0;min-height:100dvh;padding:24px 16px;overflow:auto;
+  background-image:radial-gradient(700px 480px at 12% 6%,rgba(45,212,191,.42),transparent 60%),radial-gradient(760px 520px at 88% 14%,rgba(34,197,94,.30),transparent 62%),radial-gradient(900px 620px at 50% 110%,rgba(13,148,136,.35),transparent 60%)}
+.login-screen .login-card{background:rgba(255,255,255,.09);backdrop-filter:blur(20px) saturate(1.35);-webkit-backdrop-filter:blur(20px) saturate(1.35);border:1px solid rgba(255,255,255,.28);border-radius:24px;color:#eafaf5;box-shadow:0 30px 60px -24px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.22)}
+.login-screen .login-card h2{color:#fff}
+.login-screen .login-card .sub,.login-screen .login-card .fine{color:rgba(234,250,245,.7)}
+.login-screen .login-logo{width:94px;height:94px;font-size:44px;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.32),rgba(255,255,255,.07) 62%);border:1.5px solid rgba(255,255,255,.42);animation:nhfloat 3.6s ease-in-out infinite,nhglow 3.6s ease-in-out infinite}
+@keyframes nhfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes nhglow{0%,100%{box-shadow:0 10px 26px rgba(0,0,0,.35)}50%{box-shadow:0 0 26px 4px rgba(45,212,191,.4),0 10px 26px rgba(0,0,0,.35)}}
+.login-screen .fld{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28)}
+.login-screen .fld span{color:rgba(234,250,245,.7)}
+.login-screen .fld input{color:#fff}
+.login-screen .fld input::placeholder{color:rgba(234,250,245,.5)}
+.login-screen .go{text-transform:uppercase;letter-spacing:.1em}
+.login-screen .linklike{color:rgba(234,250,245,.72)}
+.login-screen .linklike b{color:#5eead4}
+.login-screen .pick{color:#eafaf5;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.06)}
+.login-screen .pick small{color:rgba(234,250,245,.65)}
+.login-screen .switch{border-color:rgba(255,255,255,.3)}
+.login-screen .switch button{color:rgba(234,250,245,.7)}
